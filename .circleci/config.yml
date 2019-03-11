@@ -12,11 +12,11 @@ jobs:
       - run: 
           name: Build docker image
           command: |
-            docker build -t puckel/docker-airflow .
+            docker build -t russ0519/docker-airflow-2.7 .
       - run: 
           name: Test docker image
           command: |
-            docker run puckel/docker-airflow version |grep '1.10.2'
+            docker run russ0519/docker-airflow-2.7 version |grep '1.10.2'
 workflows:
   version: 2
   build_and_test:
