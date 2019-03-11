@@ -1,11 +1,11 @@
 # VERSION 1.10.2
-# AUTHOR: Matthieu "Puckel_" Roisil
+# AUTHOR: Ruslan Sivak
 # DESCRIPTION: Basic Airflow container
 # BUILD: docker build --rm -t russ0519/docker-airflow-2.7 .
 # SOURCE: https://github.com/russ0519/docker-airflow-2.7
 
-FROM python:3.6-slim
-LABEL maintainer="Puckel_"
+FROM python:2.7.16-stretch
+LABEL maintainer="russ0519"
 
 # Never prompts the user for choices on installation/configuration of packages
 ENV DEBIAN_FRONTEND noninteractive
