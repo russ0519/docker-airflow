@@ -8,7 +8,7 @@ FROM python:2.7.16-stretch
 LABEL maintainer="russ0519"
 
 # Never prompts the user for choices on installation/configuration of packages
-ENV DEBIAN_FRONTEND noninteractive
+ARG DEBIAN_FRONTEND=noninteractive
 ENV TERM linux
 
 # Airflow
