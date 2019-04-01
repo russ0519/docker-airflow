@@ -4,7 +4,7 @@
 # BUILD: docker build --rm -t russ0519/docker-airflow-2.7 .
 # SOURCE: https://github.com/russ0519/docker-airflow-2.7
 
-FROM python:2.7.16-stretch
+FROM python:2.7.16-jessie
 LABEL maintainer="russ0519"
 
 # Never prompts the user for choices on installation/configuration of packages
@@ -41,7 +41,7 @@ RUN set -ex \
         $buildDeps \
         freetds-bin \
         build-essential \
-        default-libmysqlclient-dev \
+        libmysqlclient-dev \
         apt-utils \
         curl \
         rsync \
